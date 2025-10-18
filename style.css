@@ -1,0 +1,21 @@
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(180deg, #111, #222);
+  color: white;
+  text-align: center;
+}
+.login-container {
+  margin-top: 20vh;
+  background: rgba(0,0,0,0.7);
+  padding: 20px;
+  border-radius: 10px;
+  display: inline-block;
+}
+.cash-background {
+  position: fixed;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background-image: url('https://media.giphy.com/media/3o7aCTfyhYawdOXcFW/giphy.gif');
+  opacity: 0.2;
+  z-index: -1;
+}
