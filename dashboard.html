@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>B1 Dashboard</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="animated-cash" onload="loadDashboard()">
+
+  <header>
+    <h1>B1 MOBILE WALLET</h1>
+    <div class="menu">
+      <button onclick="window.location.href='upload.html'">Invest</button>
+      <button onclick="logout()">Logout</button>
+    </div>
+  </header>
+
+  <main class="dashboard">
+    <h2>User Dashboard</h2>
+    <p><b>User ID:</b> <span id="user-id"></span></p>
+    <p><b>GCash Number:</b> <span id="user-number"></span></p>
+    <p><b>Account Created:</b> <span id="date-created"></span></p>
+    <p><b>Wallet Balance:</b> <span id="user-balance">₱0.00</span></p>
+    <p><b>ROI (Monthly):</b> <span id="user-roi">0%</span></p>
+
+    <h3>Available Investments (Once per Month)</h3>
+    <div class="invest-options">
+      <button onclick="invest(1000)">₱1,000 Slot</button>
+      <button onclick="invest(3000)">₱3,000 Slot</button>
+      <button onclick="invest(5000)">₱5,000 Slot</button>
+      <button onclick="invest(10000)">₱10,000 Slot</button>
+    </div>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
