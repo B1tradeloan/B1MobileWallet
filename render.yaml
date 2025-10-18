@@ -1,7 +1,15 @@
 services:
   - type: web
-    name: b1-mobile-wallet-backend
+    name: b1-mobile-wallet
     env: node
-    plan: free
     buildCommand: npm install
     startCommand: npm start
+    autoDeploy: true
+    plan: free
+    envVars:
+      - key: MONGO_URI
+        sync: false
+      - key: SESSION_SECRET
+        sync: false
+      - key: SLOTS_JSON
+        sync: false
