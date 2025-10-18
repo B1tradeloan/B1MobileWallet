@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Admin Dashboard - B1 Mobile Wallet</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="animated-cash" onload="loadAdminDashboard()">
+
+  <header>
+    <h1>ADMIN PANEL</h1>
+    <div class="menu">
+      <button onclick="logout()">Logout</button>
+    </div>
+  </header>
+
+  <main class="admin-dashboard">
+    <h2>Pending Receipts</h2>
+    <div id="receipt-list" class="receipt-list">
+      <p>Loading receipts...</p>
+    </div>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
