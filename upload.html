@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Upload Receipt - B1 Mobile Wallet</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="animated-cash">
+  <header>
+    <h1>Upload Payment Receipt</h1>
+    <button onclick="window.location.href='dashboard.html'">Back</button>
+  </header>
+
+  <main class="upload-box">
+    <form id="uploadForm" onsubmit="uploadReceipt(event)">
+      <p>Upload your payment receipt (JPEG/PNG)</p>
+      <input type="file" id="receipt" accept="image/*" required>
+      <button type="submit">Submit for Verification</button>
+    </form>
+
+    <p class="note">Verification takes 25–60 hours by Admin.</p>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
